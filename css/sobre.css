@@ -1,0 +1,256 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #27282e;
+
+}
+
+                                                                                
+html{
+  font-family: "helvetica neue",sans-serif;
+}
+
+
+
+
+menu{
+  margin: 0 30px 0 0;
+  text-align: center;
+}
+
+menu a {
+  text-decoration: none;
+ 
+  margin: 0 10px;
+  line-height: 70px;
+}
+
+span{
+  color: red;
+}
+label{
+  margin: 0 40px 0 0;
+  display: none;
+  
+}
+section.main {
+  background-color: white;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px  solid red;
+  
+  display: block;
+
+}
+
+
+
+
+#toggle{
+  display:none;
+}
+
+@media only screen and (max-width: 865px){
+  h1{ margin: 0;}
+  h2{
+    color: white;
+    margin: 10px;
+    text-align: center;
+  }
+  h3{
+    color: white;
+    text-align: center;
+  }
+  nav{
+    width: 100%;
+    background-color: #96031a;
+    position: fixed;
+    top: 0;
+    
+   }
+  label{
+    width: 20px; 
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+    
+    
+   
+ 
+  }
+  menu{
+    display: none;
+    
+    text-align: left;
+  }
+  menu a{
+    
+    color: white;
+    border-top: rgba(19, 15, 15, 0.089) solid;
+    display: block; ;
+    margin: 0 10px;
+    
+  }
+  #toggle:checked + menu{
+    display: block;
+  }
+
+  
+  .re{
+    width: 200px;
+    height: 200px;
+    border-radius: 150px ;
+    
+    border: rgba(0, 0, 0, 0.637) solid;
+  
+}
+
+h1{
+  text-align: center;
+}
+
+.id{
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+.id summary{
+ 
+  margin: 5px;
+  text-align: center;
+  background-color: #96031a;
+  color: white;
+ 
+  border: #2c314d70 solid;
+  
+  
+}
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
+h2{
+  color: #27282e;
+  text-align: center;
+}
+
+.text{
+  margin-top: 100px;
+  text-align: center;
+}
+span {
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #27282e;
+}
+
+}
+
+
+@media only screen and (min-width:866px){
+
+  /*cabeçalho e navegação */
+  
+  h2{
+    color: white;
+    margin: 10px;
+    text-align: left;
+  }
+
+  h3{
+   display: none;
+  }
+  nav{
+    width: 100%;
+    background-color: #96031a;
+    position: fixed;
+    top: 0;
+    
+   }
+  menu{
+ 
+    text-align: center;
+  }
+  menu a{
+    
+    color: white;
+
+  }
+  .menu:hover{
+    background-color: white;
+    padding: 10px;
+    color: #27282e;
+    border-radius: 5px;
+  }
+  span {
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #27282e;
+  }
+
+
+
+  .re{
+    width: 200px;
+    height: 200px;
+    border-radius: 150px ;
+    
+    border: rgba(0, 0, 0, 0.637) solid;
+  
+}
+
+h1{
+  text-align: center;
+}
+
+
+.id{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding: 20px;
+}
+
+.id summary{
+ 
+  margin: 5px;
+  text-align: center;
+  background-color: #96031a;
+  color: white;
+ 
+  border: #2c314d70 solid;
+  
+  
+}
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
+h2{
+  color: #27282e;
+  text-align: center;
+}
+
+.text{
+  margin-top: 100px;
+  text-align: center;
+}
+}

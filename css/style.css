@@ -1,0 +1,91 @@
+body{
+  margin-bottom: -5px;
+  padding: 0px;
+  background-color:  #27282e ;
+}
+
+
+.user{
+  margin:0px;
+}
+
+
+form {
+  margin: auto;
+  display: grid;
+  justify-items: center;
+  
+   
+}
+form input{
+
+  
+  background-color: #96031a;
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(7, 2, 2, 0.384);
+  margin: 5px 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  
+}
+#login-click{
+  color: white;
+  background-color: #96031a;
+  width: 10%;
+ 
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba(7, 2, 2, 0.384);
+  margin-bottom: 50px;
+  
+}
+
+
+div {
+  text-align: center;
+}
+div img{
+  margin-top: 50px ;
+  color: white;
+  text-decoration: none;
+  text-decoration-style: none;
+
+
+}
+ p {
+   color: aliceblue;
+   text-align: left;
+ }
+ p a {
+  color: white;
+  text-decoration: none;
+  
+}
+p a:hover{
+  background: white;
+  color: #27282e;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#conta{
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #96031a;
+}
+
+
+@media only screen and (max-width: 866px){
+  #login-click{
+    width: 30%;
+    padding: 5px;
+  }
+}

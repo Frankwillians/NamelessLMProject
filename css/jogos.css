@@ -1,0 +1,514 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #27282e ;
+
+}
+html{
+  font-family: "helvetica neue",sans-serif;
+}
+
+
+
+
+menu{
+  margin: 0 30px 0 0;
+  text-align: center;
+}
+
+menu a {
+  text-decoration: none;
+ 
+  margin: 0 10px;
+  line-height: 70px;
+}
+
+span{
+  color: red;
+}
+label{
+  margin: 0 40px 0 0;
+  display: none;
+  
+}
+section.main {
+  background-color: white;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px  solid red;
+  
+  display: block;
+
+}
+
+
+
+
+#toggle{
+  display:none;
+}
+
+@media only screen and (max-width: 865px){
+
+  header h1 {
+    margin: 0;
+    }
+  h2{
+    color: white;
+    margin: 10px;
+    text-align: center;
+  }
+  nav{
+    width: 100%;
+    background-color: #96031a;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    
+    
+   }
+  label{
+    width: 20px; 
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+    
+    
+   
+ 
+  }
+  menu{
+    display: none;
+
+    text-align: left;
+  }
+  menu a{
+    
+    color: white;
+
+    display: block; ;
+    margin: 0 10px;
+    
+  }
+
+  span{
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #27282e;
+  }
+  
+  #toggle:checked + menu{
+    display: block;
+  }
+
+  div .game_name{
+    border-radius: 5;
+    border: #27282e3f solid;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #b40021ef;
+    text-align: center;
+    color: white;
+    position: absolute;
+    
+  }
+
+.capa_avali{
+   max-width:100%;
+}
+.pontuacoes{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 50px;
+
+
+
+
+} 
+.pontuacoes p {
+  margin-left: 50%;
+}
+.nota1{
+  border-radius: 50px;
+  width: 20px;
+  padding: 15px;
+  background-color: #960319cc;
+  position: relative;
+  left: 45px;
+  
+}  
+
+.nota2{
+  border-radius: 50px;
+  width: 20px;
+  padding: 15px;
+  background-color: #960319cc;
+  position: relative;
+  left: 20px;
+  
+} 
+.pontuacoes p,h3{
+    color: white;
+    margin-left: 20px;
+  }
+.idf1{
+  position: relative;
+  left: 25px;
+}
+
+.idf2{
+  position: relative;
+  right: 30px;
+}
+
+
+
+  
+  a{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+  }
+
+ /*info*/
+.gen{
+  display: flex;
+  background-color: #96031a;
+  text-align: center;
+  width: 90%;
+  padding: 5px;
+  justify-content: center;
+  margin-left: 15px;
+  border-radius: 20px;
+  border: 1px black solid;
+
+}
+ .info,.ficha_tec{
+   margin: 10px;
+   padding: 10px;
+   border: 1px black solid;
+
+   display: block;
+   border-radius: 10px;
+   background-color: #96031a;
+   color: white;
+ } 
+
+ details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
+
+ .video{
+   width: 100%;
+   height: 350px;
+ 
+ }
+/*area de comentarios*/
+
+.posts{
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.comment{
+  background-color: #27282e;
+  border-radius: 10px;
+  width: 50%;
+  display: block;
+  margin: 60px;
+  padding: 30px;
+  color: white;
+  
+}
+.user_moldure{
+  background-color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.username{
+  color: #96031c;
+}
+
+/*comentar*/
+
+.form_comment{
+  background-color: #96031a;
+  color: white;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px black solid;
+
+
+}
+.form_user input{
+ padding: 10px;
+ border-radius: 5px;
+}
+#send{
+  background-color: #27282e;
+  margin-top: 20px;
+  width: 90px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+}
+@media only screen and (min-width:866px){
+
+  /*cabeçalho e navegação */
+
+  
+  h2{
+    color: white;
+    margin: 10px;
+    text-align: left;
+  }
+  nav{
+    width: 100%;
+    background-color: #96031a;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+   }
+  menu{
+    
+    
+    text-align: center;
+  }
+  menu a{
+
+    color: white;
+
+  }
+  .menu:hover{
+    background-color: white;
+    padding: 10px;
+    color: #27282e;
+    border-radius: 5px;
+  }
+  span {
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #27282e;
+  }
+
+  div .game_name{
+    border-radius: 5;
+    border: #27282e3f solid;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #b40021ef;
+    text-align: center;
+    color: white;
+    position: absolute;
+    
+  }
+
+  /*conteudo*/
+
+  .capa_avali{
+    margin-top: 10px;
+    width:100%;
+    height: 300px;
+ }
+ .pontuacoes{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin-left: 50px;
+ 
+ 
+ 
+ 
+ } 
+ .pontuacoes p {
+   margin-left: 50%;
+ }
+ .nota1,.nota2{
+   border-radius: 50px;
+   width: 20px;
+   padding: 15px;
+   background-color: #960319cc;
+   border: 1px black solid;
+
+   
+ }  
+ .pontuacoes p,h3{
+     color: white;
+     margin-left: 20px;
+    
+   }
+  .nota1{
+    position: absolute;
+    top: 280px;
+    left: 60px;
+  }
+ .idf1{
+   position: absolute;
+   top: 340px;
+   left: 45px; 
+   text-shadow: 5px 5px 5px black solid;
+   
+
+ }
+
+ .nota2{
+  position: absolute;
+  top: 280px;
+  left: 220px;
+}
+.idf2{
+ position: absolute;
+ top: 340px;
+ left: 170px;
+ 
+
+}
+ 
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
+
+ 
+   
+   a{
+     text-align: center;
+     color: white;
+     padding: 20px;
+     text-decoration: none;
+   }
+ 
+  /*info*/
+ .gen{
+   margin-top: 10px;
+    float: left;
+   background-color: #96031a;
+   margin-left: 5px;
+   text-align: center;
+   padding: 10px;
+   border-radius: 10px;
+   border: 1px black solid;
+ }
+  .ficha_tec{
+    margin: 10px;
+    padding: 10px;
+    border: 1px black solid;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    background-color: #96031a;
+    color: white;
+  } 
+  .trailer{
+    margin: 10px;
+    padding: 10px;
+    border: 1px black solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    background-color: #96031a;
+    color: white;
+
+  }
+  .trailer p{
+    background-color: rgba(0, 0, 0, 0.315);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+   
+  }
+  .video{
+    width:400px;
+    height: 300px;
+    
+  }
+  .opc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+  }
+ /*area de comentarios*/
+ 
+ .posts{
+   background-color: white;
+   margin: 30px;
+   border-radius: 10px;
+   padding: 20px;
+
+ }
+ .comments{
+
+  display: grid;
+   grid-template-columns: 1fr 1fr;
+   text-align: center;
+   position: relative;
+   left: 40px;
+
+
+
+ }
+ .comment{
+   background-color: #27282e;
+   border-radius: 10px;
+   width: 50%;
+   margin: 60px;
+   
+   text-align: center;
+   padding: 20px;
+   color: white;
+   
+ }
+ .user_moldure{
+   background-color: white;
+   text-align: center;
+   border-radius: 5px;
+ }
+ .username{
+   color: #96031c;
+ }
+ 
+ /*comentar*/
+ 
+ .form_comment{
+   background-color: #96031a;
+   color: white;
+   padding: 30px;
+   margin: 10px;
+   border-radius: 5px;
+ 
+ }
+ .form_user input{
+  padding: 10px;
+  border-radius: 5px;
+ }
+ #send{
+   background-color: #27282e;
+   margin-top: 20px;
+   width: 90px;
+   border-radius: 5px;
+   padding: 20px;
+ }
+}
+ 
+ 
